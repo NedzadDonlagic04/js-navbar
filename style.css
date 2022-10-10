@@ -1,3 +1,46 @@
-p {
-    color: red
+*,
+*::before,
+*::after {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --gradient-1: hsl(223, 88%, 55%);
+    --gradient-2: hsl(223, 100%, 70%);
+    --text-color: white;
+}
+
+html {
+    font-size: 16px;
+}
+
+.nav-bar {
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+    background: linear-gradient(to bottom, var(--gradient-1), var(--gradient-2));
+}
+
+.nav-text {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    color: var(--text-color);
+    text-decoration: none;
 }
