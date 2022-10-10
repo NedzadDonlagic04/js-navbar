@@ -7,7 +7,7 @@
 }
 
 :root {
-    --gradient-1: hsl(223, 88%, 55%);
+    --gradient-1: hsl(240, 5%, 4%);
     --gradient-2: hsl(223, 100%, 70%);
     --text-color: white;
 }
@@ -20,9 +20,15 @@ html {
     min-height: 10vh;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     color: var(--text-color);
     background: linear-gradient(to bottom, var(--gradient-1), var(--gradient-2));
+}
+
+.nav-right {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-text {
@@ -31,16 +37,39 @@ html {
 }
 
 .nav-links {
+    min-height: 100%;
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 40%;
 }
 
 .nav-links li {
     list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li:hover {
+    cursor: pointer;
+    background-color: hsla(0, 100%, 100%, .3);
 }
 
 .nav-links li a {
     color: var(--text-color);
     text-decoration: none;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        display: none;
+    }
 }
