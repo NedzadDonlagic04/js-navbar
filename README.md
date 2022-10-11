@@ -1,4 +1,4 @@
 # js-navbar
 
-Using html, css and javascript I will be making
-a responsive navbar.
+Using html, css and javascript I made a
+responsive navbar.
